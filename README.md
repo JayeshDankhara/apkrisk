@@ -1,5 +1,6 @@
 # apkrisk
 
+[![PyPI](https://img.shields.io/pypi/v/apkrisk)](https://pypi.org/project/apkrisk/)
 [![CI](https://github.com/JayeshDankhara/apkrisk/actions/workflows/ci.yml/badge.svg)](https://github.com/JayeshDankhara/apkrisk/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
 
@@ -8,7 +9,7 @@
 `apkrisk` reads an APK, extracts 808 static features (permissions, security-relevant API methods and manifest metadata), and classifies it with a 17 KB linear model. It also tells you *which* features drove the verdict, so the result can be checked instead of trusted blindly.
 
 ```console
-$ pip install git+https://github.com/JayeshDankhara/apkrisk
+$ pip install apkrisk
 $ apkrisk scan AndroidMalwareDetector_v4.2.apk --explain -n 5
 [benign ] AndroidMalwareDetector_v4.2.apk  (com.jayesh.android_malware_detector)  score=-5.671
              -2.208 → benign   meta_min_sdk
@@ -30,8 +31,8 @@ $ apkrisk scan AndroidMalwareDetector_v4.2.apk --explain -n 5
 ## Install
 
 ```bash
-pip install git+https://github.com/JayeshDankhara/apkrisk   # from GitHub
-pip install apkrisk                                         # from PyPI, once released
+pip install apkrisk                                         # from PyPI
+pip install git+https://github.com/JayeshDankhara/apkrisk   # latest from GitHub
 ```
 
 Requires Python 3.10+. The only dependency is [Androguard](https://github.com/androguard/androguard).
@@ -81,7 +82,7 @@ verdict = apkrisk.predict(feats.features, model="svm")
 ### In GitHub Actions
 
 ```yaml
-- run: pip install git+https://github.com/JayeshDankhara/apkrisk
+- run: pip install apkrisk
 - run: apkrisk scan app/build/outputs/apk/release/app-release.apk --explain --fail-on-malware
 ```
 
