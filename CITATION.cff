@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "apkrisk: explainable static malware risk scoring for Android APKs"
+authors:
+  - family-names: Dankhara
+    given-names: Jayesh
+version: 0.1.0
+date-released: 2026-11-25
+license: MIT
+repository-code: "https://github.com/JayeshDankhara/apkrisk"
+keywords: [android, malware detection, static analysis, machine learning, explainability]
+preferred-citation:
+  type: unpublished
+  title: "AI-Powered Android Malware Detection System Using Machine Learning: A Multi-Objective Pareto-Optimality Approach for On-Device Deployment"
+  authors:
+    - family-names: Dankhara
+      given-names: Jayesh
+    - family-names: Jacobi
+      given-names: Mark
+  year: 2026
+  notes: "Manuscript under review, Journal of Information Security and Applications"
