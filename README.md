@@ -1,5 +1,8 @@
 # apkrisk
 
+[![CI](https://github.com/JayeshDankhara/apkrisk/actions/workflows/ci.yml/badge.svg)](https://github.com/JayeshDankhara/apkrisk/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
+
 **Explainable static malware risk scoring for Android APKs.**
 
 `apkrisk` reads an APK, extracts 808 static features (permissions, security-relevant API methods and manifest metadata), and classifies it with a 17 KB linear model. It also tells you *which* features drove the verdict, so the result can be checked instead of trusted blindly.
