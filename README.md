@@ -31,7 +31,7 @@ pip install git+https://github.com/JayeshDankhara/apkrisk   # from GitHub
 pip install apkrisk                                         # from PyPI, once released
 ```
 
-Requires Python 3.9+. The only dependency is [Androguard](https://github.com/androguard/androguard).
+Requires Python 3.10+. The only dependency is [Androguard](https://github.com/androguard/androguard).
 
 ## Usage
 

@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Explainable static malware risk scoring for Android APKs, using tiny Pareto-optimal ML models"
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Jayesh Dankhara", email = "jayesh17296@gmail.com" }]
 keywords = ["android", "malware", "apk", "security", "machine-learning", "static-analysis"]
 classifiers = [
